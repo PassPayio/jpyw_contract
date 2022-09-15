@@ -42,18 +42,18 @@ main()
 	})
 
 // Memo
-// ropsten
-// npx hardhat run --network ropsten scripts/deploy.ts
-// npx hardhat verify --network ropsten --contract contracts/Admin.sol:Admin 0x059022BeB605C4820908B35a11799D28Cf61dF97
-// npx hardhat verify --network ropsten --contract contracts/Jpyw.sol:Jpyw 0xCB31b7A6606c44D9835eAbba1315d26b1dE57676
-// npx hardhat verify --network ropsten --contract contracts/UpgradeableProxy.sol:UpgradeableProxy --constructor-args arguments.js 0x1747E80B8BdF5F904eB0b7DEcEA44F7f45E39Ab9
-// admin: 0x059022BeB605C4820908B35a11799D28Cf61dF97
-// jpyw: 0xCB31b7A6606c44D9835eAbba1315d26b1dE57676
-// upgradeableProxy: 0x1747E80B8BdF5F904eB0b7DEcEA44F7f45E39Ab9
+// goerli
+// npx hardhat run --network goerli scripts/deploy.ts
+// npx hardhat verify --network goerli --contract contracts/Admin.sol:Admin 0x4514a32D4a6F7E9c693ed582Df932B3825663985
+// npx hardhat verify --network goerli --contract contracts/Jpyw.sol:Jpyw 0x1995bCf16296aBAC90b0a9653e79DfB7082c4f90
+// npx hardhat verify --network goerli --contract contracts/UpgradeableProxy.sol:UpgradeableProxy --constructor-args arguments.js 0xE7C213183bAc92Bc0248061332C7C487c93daDEf
+// admin: 0x4514a32D4a6F7E9c693ed582Df932B3825663985
+// jpyw: 0x1995bCf16296aBAC90b0a9653e79DfB7082c4f90
+// upgradeableProxy: 0xE7C213183bAc92Bc0248061332C7C487c93daDEf
 // arguments.js
 // module.exports = [
-//     "0xCB31b7A6606c44D9835eAbba1315d26b1dE57676",
-//     "0x059022BeB605C4820908B35a11799D28Cf61dF97",
+//     "0x1995bCf16296aBAC90b0a9653e79DfB7082c4f90",
+//     "0x4514a32D4a6F7E9c693ed582Df932B3825663985",
 //     "0x",
 //   ];
 

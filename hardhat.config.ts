@@ -10,16 +10,8 @@ import * as dotenv from 'dotenv'
 
 dotenv.config()
 
-const mnemnoc =
-	typeof process.env.MNEMONIC === 'undefined' ? '' : process.env.MNEMONIC
-
-const infuraKey =
-	typeof process.env.INFURA_KEY === 'undefined' ? '' : process.env.INFURA_KEY
-
-const etherscanApiKey =
-	typeof process.env.ETHERSCAN_API_KEY === 'undefined'
-		? ''
-		: process.env.ETHERSCAN_API_KEY
+const private_key = typeof process.env.PRIVATE_KEY === 'undefined' ? '' : process.env.PRIVATE_KEY
+const etherscanApiKey = typeof process.env.ETHERSCAN_API_KEY === 'undefined' ? '' : process.env.ETHERSCAN_API_KEY
 
 const config: HardhatUserConfig = {
 	solidity: {
@@ -33,22 +25,18 @@ const config: HardhatUserConfig = {
 	},
 	networks: {
 		ethereum: {
-			url: `https://mainnet.infura.io/v3/${infuraKey}`,
-			accounts: {
-				mnemonic: mnemnoc,
-			},
+			url: `https://virulent-cosmopolitan-flower.quiknode.pro/4dfd5ab94e48af9df6db949d61c55472f4f90212/`,
+			accounts: [private_key],
 		},
-		ropsten: {
-			url: `https://ropsten.infura.io/v3/${infuraKey}`,
-			accounts: {
-				mnemonic: mnemnoc,
-			},
+		goerli: {
+			url: `https://ethereum-goerli-rpc.allthatnode.com`,
+			accounts: [private_key],
 		},
 	},
 	etherscan: {
 		apiKey: {
 			mainnet: etherscanApiKey,
-			ropsten: etherscanApiKey,
+			goerli: etherscanApiKey,
 		},
 	},
 }
