@@ -42,11 +42,21 @@ const config: HardhatUserConfig = {
 			gasPrice: 100000000000,
 			accounts: [private_key]
 		},
+		mumbai: {
+			url: `https://rpc-mumbai.maticvigil.com/`,
+			chainId: 80001,
+			accounts: [private_key]
+		},
 		bsc: {
 			url: 'https://bsc-dataseed.binance.org/',
 			chainId: 56,
 			accounts: [private_key]
 		},
+		bscTestNet: {
+			url: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+			chainId: 97,
+			accounts: [private_key]
+		}
 	},
 	etherscan: {
 		apiKey: {
