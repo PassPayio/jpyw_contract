@@ -2,6 +2,7 @@
 
 ```bash
 yarn
+npx hardhat compile
 ```
 
 # how to deploy
