@@ -27,7 +27,7 @@ const config: HardhatUserConfig = {
 	},
 	networks: {
 		ethereum: {
-			url: `https://virulent-cosmopolitan-flower.quiknode.pro/4dfd5ab94e48af9df6db949d61c55472f4f90212/`,
+			url: `https://rough-autumn-gadget.quiknode.pro/fd6b09de651121334bb6cbb079684a6b8c29e2f9/`,
 			chainId: 1,
 			accounts: [private_key],
 		},
@@ -50,6 +50,7 @@ const config: HardhatUserConfig = {
 		bsc: {
 			url: 'https://bsc-dataseed.binance.org/',
 			chainId: 56,
+			gasPrice: 100000000000,
 			accounts: [private_key]
 		},
 		bscTestNet: {
