@@ -57,6 +57,14 @@ const config: HardhatUserConfig = {
 			url: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
 			chainId: 97,
 			accounts: [private_key]
+		},
+		eosevm: {
+			url: "https://api.evm.eosnetwork.com",
+			accounts:[private_key],
+		},
+		eosevm_testnet: {
+			url: "https://api.testnet.evm.eosnetwork.com",
+			accounts:[private_key],
 		}
 	},
 	etherscan: {
